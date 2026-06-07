@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+}
+
+.topbar {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  margin: 18px 0;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card {
+  max-width: 480px;
+  margin: 25px auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 10px;
+  margin: 8px 5px 8px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.outline-btn {
+  border: 1px solid white;
+  background: transparent;
+}
+
+.outline-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.link-text {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-box {
+  margin: 15px 0;
+}
+
+.blog-title {
+  margin-bottom: 8px;
+}
+
+.blog-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.meta {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.comment {
+  background: #eef2ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.empty {
+  text-align: center;
+  color: #64748b;
+  padding: 25px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}

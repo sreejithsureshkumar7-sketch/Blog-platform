@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Blog Platform</h1>
+      <p>Create posts, read blogs, and add comments</p>
+    </div>
+    <button id="logoutBtn" class="outline-btn hidden">Logout</button>
+  </header>
+
+  <main class="container">
+    <section id="authSection" class="card auth-card">
+      <h2 id="authTitle">Login</h2>
+      <input id="nameInput" class="hidden" type="text" placeholder="Name" />
+      <input id="emailInput" type="email" placeholder="Email" />
+      <input id="passwordInput" type="password" placeholder="Password" />
+      <button id="authBtn">Login</button>
+      <p id="switchAuth" class="link-text">Create account</p>
+    </section>
+
+    <section id="createSection" class="card hidden">
+      <h2>Create Blog</h2>
+      <input id="titleInput" type="text" placeholder="Blog title" />
+      <textarea id="contentInput" placeholder="Write your blog content..."></textarea>
+      <button id="postBtn">Post Blog</button>
+    </section>
+
+    <section class="search-box">
+      <input id="searchInput" type="text" placeholder="Search blogs..." />
+    </section>
+
+    <section id="postsList"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
